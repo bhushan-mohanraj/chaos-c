@@ -51,6 +51,7 @@ void run(struct Game game)
 int main()
 {
     struct Game game = {3, 1000, 0.5};
+    run(game);
 
     return 0;
 }
