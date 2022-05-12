@@ -5,7 +5,7 @@ struct Game
 {
     int vertex_count;
     int point_count;
-    float factor;
+    double factor;
 };
 
 int main()
