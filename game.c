@@ -33,11 +33,11 @@ void run(struct Game game)
 
     for (int i = 0; i < game.point_count; ++i)
     {
-        double random = (double) rand() / RAND_MAX;
-        int random_vertex_index = (int) (random * game.vertex_count);
+        double random_normalized = (double) rand() / RAND_MAX;
+        int random_index = (int) (random_normalized * game.vertex_count);
 
-        vertex_x = vertices[random_vertex_index][0];
-        vertex_y = vertices[random_vertex_index][1];
+        vertex_x = vertices[random_index][0];
+        vertex_y = vertices[random_index][1];
 
         x = (1 - game.factor) * x + game.factor * vertex_x;
         y = (1 - game.factor) * y + game.factor * vertex_y;
