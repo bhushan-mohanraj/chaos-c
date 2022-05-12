@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <math.h>
 
+struct Point
+{
+    double x;
+    double y;
+}
+
 struct Game
 {
     int vertex_count;
